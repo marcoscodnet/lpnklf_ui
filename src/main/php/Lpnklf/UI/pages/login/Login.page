@@ -1,0 +1,7 @@
+<rasty specificationClass="Lpnklf\UI\pages\login\Login" templateLocation="pages/login/Login.htm"> 
+
+	<param name="layoutType" value="str:LpnklfLoginMetroLayout" />
+	<param name="error" value="get:error" />
+
+		
+</rasty>

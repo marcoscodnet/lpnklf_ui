@@ -1,0 +1,70 @@
+<!-- BEGIN:main -->
+<script>
+
+
+
+
+$(document).ready(function(){
+
+	$( "#monto" ).val( $( "#montoTotal" ).val() );
+	
+});
+
+
+</script>
+<style>
+.buttons button{
+
+	margin: 10px;
+}
+
+</style>
+<div class="box">
+	<div class="item">
+		<h2 class='saldo'>{lbl_fecha}</h2>
+		<p class='saldo'>{fecha}</p>
+	</div>
+	
+	<div class="item">
+		<h2>{lbl_servicioTecnico}</h2>
+		<p>{servicioTecnico}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_estadoServicio}</h2>
+		<p>{estadoServicio}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_prioridad}</h2>
+		<p>{prioridad}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_diagnostico}</h2>
+		<p>{disgnostico}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_solucion}</h2>
+		<p>{solucion}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_observaciones}</h2>
+		<p>{observaciones}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_monto}</h2>
+		<p>{monto}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_montoPagado}</h2>
+		<p>{montoPagado}</p>
+	</div>
+	<div class="item">
+		<h2>{lbl_montoDebe}</h2>
+		<p><rasty id="monto" /><input type="hidden" value="{montoTotal}" name="montoTotal" id="montoTotal" /></p>
+	</div>
+	<div class="item">
+		<h2>{lbl_estado}</h2>
+		<p>{estado}</p>
+	</div>
+</div>
+
+<!-- END:main -->

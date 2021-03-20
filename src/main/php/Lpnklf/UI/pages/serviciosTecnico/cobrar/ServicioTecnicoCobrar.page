@@ -1,0 +1,12 @@
+<rasty specificationClass="Lpnklf\UI\pages\serviciosTecnico\cobrar\ServicioTecnicoCobrar" templateLocation="pages/serviciosTecnico/cobrar/ServicioTecnicoCobrar.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+
+	<param name="servicioTecnicoOid" value="get:servicioTecnicoOid" />
+	
+	<param name="error" value="get:error" />
+	
+	<component id="servicioTecnico" type="ServicioTecnicoBox">
+		<param name="servicioTecnico" value="servicioTecnico" />
+	</component>
+</rasty>

@@ -1,0 +1,181 @@
+<!-- BEGIN:main -->
+<script language="javascript"
+	src="{WEB_PATH}js/autocomplete/simpleAutoComplete.js"></script>
+<link rel="stylesheet"
+	href="{WEB_PATH}css/autocomplete/simpleAutoComplete.css"
+	type="text/css" />
+
+
+
+
+<script>
+
+$(function() {
+
+	$("#codigo").focus();
+	
+});
+</script>
+
+<div>
+<form class="cuentas_form" id="servicioTecnico_form" onsubmit="return validate('servicioTecnico_form');" action="{action}" method="{method}">
+
+		<fieldset>
+		<legend>{legend}</legend>
+
+		<rasty id="backSuccess" />
+	    <rasty id="oid" />
+		<div class="row">
+			<div class="col-3">
+				<div class="item">
+				    <label for="fecha">{lbl_fecha} *:</label>
+				    <rasty id="fecha" />
+				    <rasty id="hora" />
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="item">
+				    <label for="cliente">{lbl_cliente}:</label>
+				    <rasty id="cliente" />
+				</div>
+			</div>	
+			<div class="col-3">
+				<div class="item">
+				    <label for="prioridad">{lbl_prioridad}:</label>
+				    <rasty id="prioridad" />
+				</div>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="item">
+				    <label for="tipoProducto">{lbl_tipoProducto}:</label>
+				    <rasty id="tipoProducto" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="marcaProducto">{lbl_marcaProducto}:</label>
+				    <rasty id="marcaProducto" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="modelo">{lbl_modelo}:</label>
+				    <rasty id="modelo" />
+				</div>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+		<div class="item">
+		    <label for="detalleFalla">{lbl_detalleFalla}:</label>
+		    <rasty id="detalleFalla" />
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="item">
+				    <label for="fuente">{lbl_fuente}:</label>
+				    <rasty id="fuente" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="bateria">{lbl_bateria}:</label>
+				    <rasty id="bateria" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="clave">{lbl_clave}:</label>
+				    <rasty id="clave" />
+				</div>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+		<div class="item">
+		    <label for="observaciones">{lbl_observaciones}:</label>
+		    <rasty id="observaciones" />
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="item">
+				    <label for="estadoServicio">{lbl_estadoServicio}:</label>
+				    <rasty id="estadoServicio" />
+				</div>
+			</div>
+			
+			<div class="col-3">
+				<div class="item">
+				    <label for="diasDemora">{lbl_diasDemora}:</label>
+				    <rasty id="diasDemora" />
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="item">
+				    <label for="reparaHasta">{lbl_reparaHasta}:</label>
+				    <rasty id="reparaHasta" />
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="item">
+				    <label for="monto">{lbl_monto}:</label>
+				    <rasty id="monto" />
+				</div>
+			</div>
+			
+			<div style="clear: both"></div>
+		</div>
+		
+		
+		
+		
+		
+
+		
+
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="item">
+		    <label for="diagnostico">{lbl_diagnostico}:</label>
+		    <rasty id="diagnostico" />
+		</div>
+		
+		<div class="item">
+		    <label for="solucion">{lbl_solucion}:</label>
+		    <rasty id="solucion" />
+		</div>
+
+		
+		
+		
+	</fieldset>
+	
+
+</form>
+<!-- BEGIN: msg_error -->
+<fieldset class="ui-state-error">
+	{msg}	
+</fieldset>
+<!-- END: msg_error -->
+
+<form  class="turnos_form" id="buttons{inputId}">
+	<fieldset class="tblFooters">
+	
+		<button type="button"  id="input_submit" onclick="javascript: submitFormulario('servicioTecnico_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
+
+		<button type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

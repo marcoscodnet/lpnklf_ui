@@ -1,0 +1,22 @@
+<rasty specificationClass="Lpnklf\UI\components\filter\producto\ProductoFilter" templateLocation="ProductoFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:producto.nombre" />
+		
+	</component>
+
+	<component id="tipoProducto" type="InputText">
+		<param name="name" value="str:tipoProducto" />
+		<param name="value" value="criteria.tipoProducto" />
+		<param name="placeholder" value="msg:producto.tipoProducto" />
+		
+	</component>
+	<component id="marcaProducto" type="InputText">
+		<param name="name" value="str:marcaProducto" />
+		<param name="value" value="criteria.marcaProducto" />
+		<param name="placeholder" value="msg:producto.marcaProducto" />
+		
+	</component>
+</rasty>

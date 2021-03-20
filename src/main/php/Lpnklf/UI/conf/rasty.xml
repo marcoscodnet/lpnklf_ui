@@ -1,0 +1,224 @@
+<rasty-application>
+
+	<!-- declaración de las páginas -->
+	<page name="Login" location="pages/login/Login.page" url="login"/>
+
+	
+	<page name="AdminHome"   location="pages/home/AdminHome.page" url="admin/home"/>
+
+	
+	<page name="TiposProducto"   location="pages/tiposProducto/TiposProducto.page" url="tiposProducto"/>
+	<page name="TipoProductoAgregar"   location="pages/tiposProducto/agregar/TipoProductoAgregar.page" url="tiposProducto/agregar"/>
+	<page name="TipoProductoModificar"   location="pages/tiposProducto/modificar/TipoProductoModificar.page" url="tiposProducto/modificar"/>
+	
+	<page name="TiposDispositivo"   location="pages/tiposDispositivo/TiposDispositivo.page" url="tiposDispositivo"/>
+	<page name="TipoDispositivoAgregar"   location="pages/tiposDispositivo/agregar/TipoDispositivoAgregar.page" url="tiposDispositivo/agregar"/>
+	<page name="TipoDispositivoModificar"   location="pages/tiposDispositivo/modificar/TipoDispositivoModificar.page" url="tiposDispositivo/modificar"/>
+	
+	<page name="MarcasProducto"   location="pages/marcasProducto/MarcasProducto.page" url="marcasProducto"/>
+	<page name="MarcaProductoAgregar"   location="pages/marcasProducto/agregar/MarcaProductoAgregar.page" url="marcasProducto/agregar"/>
+	<page name="MarcaProductoModificar"   location="pages/marcasProducto/modificar/MarcaProductoModificar.page" url="marcasProducto/modificar"/>
+	
+	<page name="Ivas"   location="pages/ivas/Ivas.page" url="ivas"/>
+	<page name="IvaAgregar"   location="pages/ivas/agregar/IvaAgregar.page" url="ivas/agregar"/>
+	<page name="IvaModificar"   location="pages/ivas/modificar/IvaModificar.page" url="ivas/modificar"/>
+	
+	<page name="Estados"   location="pages/estados/Estados.page" url="estados"/>
+	<page name="EstadoAgregar"   location="pages/estados/agregar/EstadoAgregar.page" url="estados/agregar"/>
+	<page name="EstadoModificar"   location="pages/estados/modificar/EstadoModificar.page" url="estados/modificar"/>
+	
+	<page name="ConceptoGastos"   location="pages/conceptoGastos/ConceptoGastos.page" url="conceptoGastos"/>
+	<page name="ConceptoGastoAgregar"   location="pages/conceptoGastos/agregar/ConceptoGastoAgregar.page" url="conceptoGastos/agregar"/>
+	<page name="ConceptoGastoModificar"   location="pages/conceptoGastos/modificar/ConceptoGastoModificar.page" url="conceptoGastos/modificar"/>
+	
+	<page name="ConceptoMovimientos"   location="pages/conceptoMovimientos/ConceptoMovimientos.page" url="conceptoMovimientos"/>
+	<page name="ConceptoMovimientoAgregar"   location="pages/conceptoMovimientos/agregar/ConceptoMovimientoAgregar.page" url="conceptoMovimientos/agregar"/>
+	<page name="ConceptoMovimientoModificar"   location="pages/conceptoMovimientos/modificar/ConceptoMovimientoModificar.page" url="conceptoMovimientos/modificar"/>
+	
+	<page name="Gastos"   location="pages/gastos/Gastos.page" url="gastos"/>
+	<page name="GastoAgregar"   location="pages/gastos/agregar/GastoAgregar.page" url="gastos/agregar"/>
+	<page name="GastoPagar"   location="pages/gastos/pagar/GastoPagar.page" url="gastos/pagar"/>
+	<page name="GastoAnular"   location="pages/gastos/anular/GastoAnular.page" url="gastos/anular"/>
+	
+	<page name="Productos"   location="pages/productos/Productos.page" url="productos"/>
+	<page name="ProductoAgregar"   location="pages/productos/agregar/ProductoAgregar.page" url="productos/agregar"/>
+	<page name="ProductoModificar"   location="pages/productos/modificar/ProductoModificar.page" url="productos/modificar"/>
+	<page name="StockProductoModificar"   location="pages/productos/stock/StockProductoModificar.page" url="productos/stock/modificar"/>
+
+	<page name="Parametros"   location="pages/parametros/Parametros.page" url="parametros"/>
+	
+	<page name="ParametroModificar"   location="pages/parametros/modificar/ParametroModificar.page" url="parametros/modificar"/>
+	
+	<page name="Clientes"   location="pages/clientes/Clientes.page" url="clientes"/>
+	<page name="ClienteAgregar"   location="pages/clientes/agregar/ClienteAgregar.page" url="clientes/agregar"/>
+	<page name="ClienteModificar"   location="pages/clientes/modificar/ClienteModificar.page" url="clientes/modificar"/>
+	
+	<page name="ServiciosTecnico"   location="pages/serviciosTecnico/ServiciosTecnico.page" url="serviciosTecnico"/>
+	<page name="ServicioTecnicoAgregar"   location="pages/serviciosTecnico/agregar/ServicioTecnicoAgregar.page" url="serviciosTecnico/agregar"/>
+	<page name="ServicioTecnicoModificar"   location="pages/serviciosTecnico/modificar/ServicioTecnicoModificar.page" url="serviciosTecnico/modificar"/>
+	<page name="ServicioTecnicoCobrar"   location="pages/serviciosTecnico/cobrar/ServicioTecnicoCobrar.page" url="serviciosTecnico/cobrar"/>
+	<page name="ServicioTecnicoAnular"   location="pages/serviciosTecnico/anular/ServicioTecnicoAnular.page" url="serviciosTecnico/anular"/>
+	<page name="ServicioTecnicoCobrarTarjeta"   location="pages/serviciosTecnico/cobrar/ServicioTecnicoCobrarTarjeta.page" url="serviciosTecnico/cobrar/tarjeta"/>
+	
+
+	<page name="Ventas"   location="pages/ventas/Ventas.page" url="ventas"/>
+	<page name="VentaAgregar"   location="pages/ventas/agregar/VentaAgregar.page" url="ventas/agregar"/>
+	<page name="VentaCobrar"   location="pages/ventas/cobrar/VentaCobrar.page" url="ventas/cobrar"/>
+	<page name="VentaAnular"   location="pages/ventas/anular/VentaAnular.page" url="ventas/anular"/>
+	<page name="VentaCobrarTarjeta"   location="pages/ventas/cobrar/VentaCobrarTarjeta.page" url="ventas/cobrar/tarjeta"/>
+	
+	<page name="MovimientosCaja"   location="pages/cajas/MovimientosCaja.page" url="cajas/movimientos"/>
+	<page name="MovimientosCajaTarjeta"   location="pages/cajas/MovimientosCajaTarjeta.page" url="cajas/tarjetas/movimientos"/>
+	<page name="MovimientosCajaCtaCte"   location="pages/cajas/MovimientosCajaCtaCte.page" url="cajas/ctasctes/movimientos"/>
+	<page name="MovimientosVenta"   location="pages/ventas/MovimientosVenta.page" url="ventas/movimientos"/>
+	<page name="MovimientosCtaCte"   location="pages/clientes/MovimientosCtaCte.page" url="clientes/ctacte/movimientos"/>
+	<page name="MovimientosGasto"   location="pages/gastos/MovimientosGasto.page" url="gastos/movimientos"/>
+	<page name="MovimientosServicioTecnico"   location="pages/serviciosTecnico/MovimientosServicioTecnico.page" url="serviciosTecnico/movimientos"/>
+	
+	<page name="CobrarCtaCte"   location="pages/clientes/cobrarCtaCte/CobrarCtaCte.page" url="cuentasCorrientes/cobrar"/>
+	
+	<page name="HistoricoEstados"   location="pages/historicoEstados/HistoricoEstados.page" url="historicoEstados"/>
+
+	<!-- declaración de los componentes -->
+	<component name="HeaderNav" location="components/header" />
+	<component name="HeaderNavMetro" location="components/header" />
+	
+	<component name="FooterLpnklf" location="components/footer" />
+	
+	<component name="GastoBox"   location="components/boxes/gasto"/>
+	<component name="VentaBox"   location="components/boxes/venta"/>
+	<component name="CuentaCorrienteBox"   location="components/boxes/cuentaCorriente"/>
+	<component name="ServicioTecnicoBox"   location="components/boxes/servicioTecnico"/>
+	<!-- forms -->
+	
+	<component name="TipoProductoForm"   location="components/form/tipoProducto"/>
+	<component name="TipoDispositivoForm"   location="components/form/tipoDispositivo"/>
+	<component name="MarcaProductoForm"   location="components/form/marcaProducto"/>
+	<component name="IvaForm"   location="components/form/iva"/>
+	<component name="EstadoForm"   location="components/form/estado"/>
+	<component name="ConceptoGastoForm"   location="components/form/conceptoGasto"/>
+	<component name="ConceptoMovimientoForm"   location="components/form/conceptoMovimiento"/>
+	<component name="GastoForm"   location="components/form/gasto"/>
+	<component name="ProductoForm"   location="components/form/producto"/>
+	<component name="VentaForm"   location="components/form/venta"/>
+	<component name="ClienteForm"   location="components/form/cliente"/>
+	<component name="ServicioTecnicoForm"   location="components/form/servicioTecnico"/>
+	<component name="VentaCobrarTarjetaForm"   location="components/form/venta"/>
+	<component name="ServicioTecnicoCobrarTarjetaForm"   location="components/form/servicioTecnico"/>
+	<component name="ParametroForm"   location="components/form/parametro"/>
+	
+	<!-- filters -->
+	
+	<component name="TipoProductoFilter"   location="components/filter/tipoProducto"/>
+	<component name="TipoDispositivoFilter"   location="components/filter/tipoDispositivo"/>
+	<component name="MarcaProductoFilter"   location="components/filter/marcaProducto"/>
+	<component name="IvaFilter"   location="components/filter/iva"/>
+	<component name="EstadoFilter"   location="components/filter/estado"/>
+	<component name="ConceptoGastoFilter"   location="components/filter/conceptoGasto"/>
+	<component name="ConceptoMovimientoFilter"   location="components/filter/conceptoMovimiento"/>
+	<component name="GastoFilter"   location="components/filter/gasto"/>
+	<component name="ProductoFilter"   location="components/filter/producto"/>
+	<component name="ClienteFilter"   location="components/filter/cliente"/>
+	<component name="ServicioTecnicoFilter"   location="components/filter/servicioTecnico"/>
+	<component name="VentaFilter"   location="components/filter/venta"/>	
+	<component name="MovimientoCajaFilter"   location="components/filter/movimiento"/>	
+	<component name="MovimientoSaldoCajaFilter"   location="components/filter/movimiento"/>	
+	<component name="MovimientoCajaTarjetaFilter"   location="components/filter/movimiento"/>	
+	<component name="MovimientoCajaCtaCteFilter"   location="components/filter/movimiento"/>	
+	<component name="MovimientoVentaFilter"   location="components/filter/movimiento"/>
+	<component name="HistoricoEstadoFilter"   location="components/filter/historicoEstado"/>
+	<component name="MovimientoGastoFilter"   location="components/filter/movimiento"/>
+	<component name="MovimientoServicioTecnicoFilter"   location="components/filter/movimiento"/>
+	<component name="ParametroFilter"   location="components/filter/parametro"/>
+			
+	<!-- pdfs -->
+	<component name="ServicioTecnicoPDF"   location="components/pdf/servicioTecnico"/>
+									
+	<!-- layouts -->
+	<component name="LpnklfMetroLayout" location="layouts" />
+	<component name="LpnklfLoginMetroLayout" location="layouts" />
+	<component name="LpnklfHomeMetroLayout" location="layouts" />
+	<component name="RastySecurityLayout" location="layouts" />
+	<component name="RastyCatalogoLayout" location="layouts" />
+	
+	
+	
+	<!-- declaración de las actions -->
+	<action name="Login" class="Lpnklf\UI\actions\login\Login" url="login"/>
+	<action name="Logout" class="Lpnklf\UI\actions\login\Logout" url="logout"/>
+
+	
+	<action name="AgregarTipoProducto" class="Lpnklf\UI\actions\tiposProducto\AgregarTipoProducto" url="tiposProducto/agregar"/>
+	<action name="ModificarTipoProducto" class="Lpnklf\UI\actions\tiposProducto\ModificarTipoProducto" url="tiposProducto/modificar"/>
+	<action name="EliminarTipoProducto" class="Lpnklf\UI\actions\tiposProducto\EliminarTipoProducto" url="tiposProducto/eliminar"/>
+	
+	<action name="AgregarTipoDispositivo" class="Lpnklf\UI\actions\tiposDispositivo\AgregarTipoDispositivo" url="tiposDispositivo/agregar"/>
+	<action name="ModificarTipoDispositivo" class="Lpnklf\UI\actions\tiposDispositivo\ModificarTipoDispositivo" url="tiposDispositivo/modificar"/>
+	<action name="EliminarTipoDispositivo" class="Lpnklf\UI\actions\tiposDispositivo\EliminarTipoDispositivo" url="tiposDispositivo/eliminar"/>
+	
+	<action name="AgregarMarcaProducto" class="Lpnklf\UI\actions\marcasProducto\AgregarMarcaProducto" url="marcasProducto/agregar"/>
+	<action name="ModificarMarcaProducto" class="Lpnklf\UI\actions\marcasProducto\ModificarMarcaProducto" url="marcasProducto/modificar"/>
+	<action name="EliminarMarcaProducto" class="Lpnklf\UI\actions\marcasProducto\EliminarMarcaProducto" url="marcasProducto/eliminar"/>
+
+	<action name="AgregarIva" class="Lpnklf\UI\actions\ivas\AgregarIva" url="ivas/agregar"/>
+	<action name="ModificarIva" class="Lpnklf\UI\actions\ivas\ModificarIva" url="ivas/modificar"/>
+	<action name="EliminarIva" class="Lpnklf\UI\actions\ivas\EliminarIva" url="ivas/eliminar"/>
+
+	<action name="AgregarEstado" class="Lpnklf\UI\actions\estados\AgregarEstado" url="estados/agregar"/>
+	<action name="ModificarEstado" class="Lpnklf\UI\actions\estados\ModificarEstado" url="estados/modificar"/>
+	<action name="EliminarEstado" class="Lpnklf\UI\actions\estados\EliminarEstado" url="estados/eliminar"/>
+	
+	<action name="AgregarConceptoGasto" class="Lpnklf\UI\actions\conceptoGastos\AgregarConceptoGasto" url="conceptoGastos/agregar"/>
+	<action name="ModificarConceptoGasto" class="Lpnklf\UI\actions\conceptoGastos\ModificarConceptoGasto" url="conceptoGastos/modificar"/>
+	<action name="EliminarConceptoGasto" class="Lpnklf\UI\actions\conceptoGastos\EliminarConceptoGasto" url="conceptoGastos/eliminar"/>
+
+	<action name="AgregarConceptoMovimiento" class="Lpnklf\UI\actions\conceptoMovimientos\AgregarConceptoMovimiento" url="conceptoMovimientos/agregar"/>
+	<action name="ModificarConceptoMovimiento" class="Lpnklf\UI\actions\conceptoMovimientos\ModificarConceptoMovimiento" url="conceptoMovimientos/modificar"/>
+	<action name="EliminarConceptoMovimiento" class="Lpnklf\UI\actions\conceptoMovimientos\EliminarConceptoMovimiento" url="conceptoMovimientos/eliminar"/>
+
+	<action name="AgregarGasto" class="Lpnklf\UI\actions\gastos\AgregarGasto" url="gastos/agregar"/>
+	<action name="PagarGasto" class="Lpnklf\UI\actions\gastos\PagarGasto" url="gastos/pagar"/>
+	<action name="AnularGasto" class="Lpnklf\UI\actions\gastos\AnularGasto" url="gastos/anular"/>
+
+	<action name="AgregarProducto" class="Lpnklf\UI\actions\productos\AgregarProducto" url="productos/agregar"/>
+	<action name="ModificarProducto" class="Lpnklf\UI\actions\productos\ModificarProducto" url="productos/modificar"/>
+	<action name="ModificarStockProducto" class="Lpnklf\UI\actions\productos\ModificarStockProducto" url="productos/stock/modificar"/>
+
+	<action name="AgregarCliente" class="Lpnklf\UI\actions\clientes\AgregarCliente" url="clientes/agregar"/>
+	<action name="ModificarCliente" class="Lpnklf\UI\actions\clientes\ModificarCliente" url="clientes/modificar"/>
+	<action name="EliminarCliente" class="Lpnklf\UI\actions\clientes\EliminarCliente" url="clientes/eliminar"/>
+	
+	<action name="ModificarParametro" class="Lpnklf\UI\actions\parametros\ModificarParametro" url="parametros/modificar"/>
+	
+	<action name="AgregarCuentaCorrienteJson" class="Lpnklf\UI\actions\cuentasCorrientes\AgregarCuentaCorrienteJson" url="cuentasCorrientes/agregarJson"/>
+	<action name="CobrarCuentaCorriente" class="Lpnklf\UI\actions\cuentasCorrientes\CobrarCuentaCorriente" url="cuentasCorrientes/cobrar"/>
+	
+	<action name="AgregarServicioTecnico" class="Lpnklf\UI\actions\serviciosTecnico\AgregarServicioTecnico" url="serviciosTecnico/agregar"/>
+	<action name="ModificarServicioTecnico" class="Lpnklf\UI\actions\serviciosTecnico\ModificarServicioTecnico" url="serviciosTecnico/modificar"/>
+	<action name="CobrarServicioTecnicoEfectivo" class="Lpnklf\UI\actions\serviciosTecnico\CobrarServicioTecnicoEfectivo" url="serviciosTecnico/cobrar/efectivo"/>
+	<action name="CobrarServicioTecnicoCtaCte" class="Lpnklf\UI\actions\serviciosTecnico\CobrarServicioTecnicoCtaCte" url="serviciosTecnico/cobrar/ctacte"/>
+	<action name="AnularServicioTecnico" class="Lpnklf\UI\actions\serviciosTecnico\AnularServicioTecnico" url="serviciosTecnico/anular"/>
+	<action name="CobrarServicioTecnicoTarjeta" class="Lpnklf\UI\actions\serviciosTecnico\CobrarServicioTecnicoTarjeta" url="serviciosTecnico/cobrar/tarjeta"/>
+	<action name="SeleccionarTarjetaJson" class="Lpnklf\UI\actions\serviciosTecnico\SeleccionarTarjetaJson" url="serviciosTecnico/cobrar/seleccionarJson"/>
+	
+	
+	<action name="AgregarVenta" class="Lpnklf\UI\actions\ventas\AgregarVenta" url="ventas/agregar"/>
+	<action name="AgregarDetalleVentaJson" class="Lpnklf\UI\actions\ventas\AgregarDetalleVentaJson" url="ventas/agregar/detalleJson"/>
+	<action name="BorrarDetalleVentaJson" class="Lpnklf\UI\actions\ventas\BorrarDetalleVentaJson" url="ventas/borrar/detalleJson"/>
+	<action name="CobrarVentaEfectivo" class="Lpnklf\UI\actions\ventas\CobrarVentaEfectivo" url="ventas/cobrar/efectivo"/>
+	<action name="CobrarVentaCtaCte" class="Lpnklf\UI\actions\ventas\CobrarVentaCtaCte" url="ventas/cobrar/ctacte"/>
+	<action name="AnularVenta" class="Lpnklf\UI\actions\ventas\AnularVenta" url="ventas/anular"/>
+	<action name="CobrarVentaTarjeta" class="Lpnklf\UI\actions\ventas\CobrarVentaTarjeta" url="ventas/cobrar/tarjeta"/>
+	<action name="SeleccionarTarjetaJson" class="Lpnklf\UI\actions\ventas\SeleccionarTarjetaJson" url="ventas/cobrar/seleccionarJson"/>
+	
+	<action name="findEntities" class="Lpnklf\UI\actions\common\ListarEntitiesJson" url="findEntities"/>
+	<action name="findEntity" class="Lpnklf\UI\actions\common\GetEntityJson" url="findEntity"/>
+	
+	
+	
+	<!-- RESTful API -->
+	
+	
+	
+		
+</rasty-application>

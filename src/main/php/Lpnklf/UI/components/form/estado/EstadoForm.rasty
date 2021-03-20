@@ -1,0 +1,30 @@
+<rasty specificationClass="Lpnklf\UI\components\form\estado\EstadoForm" templateLocation="EstadoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="estado.oid" />
+	</component>
+
+
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="estado.nombre" />
+		<param name="requiredMessage" value="msg:estado.nombre.required" />
+		<param name="placeholder" value="msg:estado.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+</rasty>

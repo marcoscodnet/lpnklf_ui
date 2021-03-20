@@ -1,0 +1,14 @@
+<rasty specificationClass="Lpnklf\UI\pages\estados\agregar\EstadoAgregar" templateLocation="pages/estados/agregar/EstadoAgregar.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+
+	<component id="estadoForm" type="EstadoForm">
+		<param name="legend" value="msg:estado.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarEstado" />
+		<param name="method" value="str:post" />
+		<param name="estado" value="estado" />
+	</component>
+	
+</rasty>

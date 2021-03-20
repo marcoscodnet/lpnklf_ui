@@ -1,0 +1,244 @@
+<!-- BEGIN:main -->
+<html>
+<head>
+  <style>
+    @page { margin: 280px 50px; }
+    #header { position: fixed; left: 0px; top: -280px; right: 0px; }
+    #footer { position: fixed; left: 0px; bottom: -280px; right: 0px; height: 300px;  }
+    #footer .page:after { content: counter(page); }
+    #content {page-break-after: auto;}
+  </style>
+  </head>
+<body>
+  <div id="header">
+    <table>
+	<tr>
+	<td width="450px">
+		<p style="font-size:22pt;font-weight: bold;">Orden de servicio # {oid}</p>
+		<p style="font-size:24pt;font-weight: bold;">{cliente}</p>
+		<p style="font-size:16pt;">{fecha}</p>
+		<p style="font-size:16pt;">&#60;Documento no v&aacute;lido como factura&#62;</p>
+	</td>
+	<td align="center">
+		<table>
+			<tr>
+			<td>
+				
+				<p style="font-size:10pt;">
+				<img border="0" alt="logo" name="imLogo" id="imLogo" width="150px" height="47px" src="{APP_PATH}css/images/logo_horizontal.png">
+				Pueyrred&oacute;n #441<br>
+				info@infinitodigital.com.ar<br>
+				Las Flores - Buenos Aires<br>
+				Whatsapp: 2244 406431<br>
+				Tel&eacute;fono: 2244 440222<br>
+				Facebook: InfinitoDigitalLasFlores
+				</p>
+				
+			</td>
+			
+			</tr>
+	
+		</table>
+		
+	</td>
+	</tr>
+	
+</table>
+
+  </div>
+  <div id="footer">
+  	<hr />
+
+
+		<span style="font-size:8pt;">No se aceptar&aacute;n reclamos por fallas no relacionadas con la reparaci&oacute;n efectuada o fallas cuya naturaleza sean a partir de vicios ocultos del producto,
+como pueden ser las fallas de chipset de video y/o system board.<br>
+
+		En caso que el cliente requiera una copia de datos, se refiere a hacer una copia de sus archivos de usuario, no de programas ni de archivos almacenados
+en las carpetas de programas. Infinito Digital no se responsabiliza de los datos almacenados en el mismo. El cliente exonera a Infinito Digital (Diego
+Gonzalez y Gast&oacute;n Gonzalez Gradaschi SH) de toda responsabilidad respecto de dicha informaci&oacute;n, incluyendo p&eacute;rdida parcial o total de la misma.<br>
+		Los equipos que no fuesen retirados dentro de los 90 d&iacute;as se considerar&aacute;n abandonados. En este caso Infinito Digital (Diego Gonzalez y Gast&oacute;n
+Gonzalez Gradaschi SH) adquirir&aacute; su dominio en concepto de compensaci&oacute;n del servicio prestado m&aacute;s el costo del dep&oacute;sito, quedando facultada para
+disponer del mismo, perdiendo el cliente todo derecho a indemnizaci&oacute;n o reclamo alguno, C&oacute;digo Civil art&iacute;culos 2525 y 2526 y renunciando a efectuar
+cualquier tipo de reclamo extrajudicial, administrativo y/o judicial al respecto.<br>
+Para retirar el equipo, el cliente deber&aacute; presentar la orden de servicio t&eacute;cnico y no se admitir&aacute;n reclamos por accesorios no declarados en la recepci&oacute;n.<br>
+La empresa no asume responsabilidad alguna por los programas (software) sin licencia que el usuario tenga instalado en el equipo ni por eventuales
+medidas judiciales de secuestros que pudieran ordenare sobre los mismos ante procesos de Software Legal o de los propietarios de tales licencias.<br>
+Es responsabilidad del cliente describir detalladamente la o las fallas que se perciben. Una oportuna reparaci&oacute;n depende en gran medida de la correcta
+descripci&oacute;n del problema que presenta el equipo.<br>
+Para el caso de reparaci&oacute;n, el Cliente acepta abonar el costo total del servicio, una vez efectuada la reparaci&oacute;n o el servicio.
+
+</span>
+		
+
+<table>
+			<tr>
+			<td width="300px" align="right">
+				
+				
+				<img border="0" alt="logo" name="imLogo" id="imLogo" width="150px" height="47px" src="{APP_PATH}css/images/logo_horizontal.png">
+				
+				
+			</td>
+			<td>
+				
+				<p style="font-size:8pt;">
+				
+				Pueyrred&oacute;n #441 - info@infinitodigital.com.ar<br>
+				Las Flores - Buenos Aires<br>
+				Whatsapp: 2244 406431 - Tel&eacute;fono: 2244 440222<br>
+				Facebook: InfinitoDigitalLasFlores
+				</p>
+				
+			</td>
+			<td width="180px" align="right">
+				
+				<p style="font-size:8pt;" class="page">P&aacute;gina </p>
+				
+			</td>
+			
+			</tr>
+	
+		</table>	
+    
+  </div>
+  <div id="content">
+  <hr />
+    <table>
+	<tr>
+	<td colspan="2">
+		<span style="font-size:16pt;font-weight: bold;">CLIENTE</span>
+	</td>
+	</tr>
+	<tr>
+	<td width="450px"> 
+		<span style="font-size:12pt;">Ap. y Nom./Rs: {cliente}</span>
+		
+	</td>
+	<td> 
+		<span style="font-size:12pt;">Celular: {celular}</span>
+		
+	</td>
+	
+	</tr>
+	<tr>
+	<td width="450px"> 
+		<span style="font-size:12pt;">Telefono fijo: {telefono}</span>
+		
+	</td>
+	<td> 
+		<span style="font-size:12pt;">Email: {email}</span>
+		
+	</td>
+	
+	</tr>
+</table>
+<hr />
+<table>
+	<tr>
+	<td colspan="3">
+		<span style="font-size:16pt;font-weight: bold;">EQUIPO</span>
+	</td>
+	
+	</tr>
+	<tr>
+	<td width="250px"> 
+		<span style="font-size:12pt;">Tipo: {tipo}</span>
+		
+	</td>
+	<td width="250px"> 
+		<span style="font-size:12pt;">Marca: {marca}</span>
+		
+	</td>
+	<td> 
+		<span style="font-size:12pt;">Modelo: {modelo}</span>
+		
+	</td>
+	</tr>
+	<tr>
+	<td width="250px"> 
+		<span style="font-size:12pt;">Fuente: {fuente}</span>
+		
+	</td>
+	<td width="250px"> 
+		<span style="font-size:12pt;">Bater&iacute;a: {bateria}</span>
+		
+	</td>
+	<td> 
+		<span style="font-size:12pt;">Clave: {clave}</span>
+		
+	</td>
+	</tr>
+	
+	</table>
+	<br>
+	<div style="font-size:12pt;">Notas:<br>{notas}</div>
+	<br>
+	<div style="font-size:12pt;">Descripci&oacute;n de la falla:<br>{detalleFalla}</div>
+	</td>
+	
+	
+
+<hr />
+<table>
+	
+	<tr>
+	<td width="450px"> 
+		<span style="font-size:12pt;">D&iacute;as de demora: {diasDemora}</span>
+		
+	</td>
+	<td> 
+		<span style="font-size:12pt;">Reparar hasta: {reparaHasta}</span>
+		
+	</td>
+	
+	</tr>
+	
+</table>
+<hr />
+<br>
+<table>
+	
+	<tr>
+	<td width="70px"> 
+		
+		
+	</td>
+	<td width="200px"> 
+		<span style="font-size:12pt;">-----------------------</span>
+		
+	</td>
+	<td width="200px"> 
+		<span style="font-size:12pt;">-----------------------</span>
+		
+	</td>
+	<td > 
+		<span style="font-size:12pt;">-----------------------</span>
+		
+	</td>
+	</tr>
+	
+</table>
+<table>
+<tr>
+	<td width="70px"> 
+		
+		
+	</td>
+	<td width="200px" align="center> 
+		<span style="font-size:12pt;">Firma Ingreso</span>
+		
+	</td>
+	<td width="200px" align="center> 
+		<span style="font-size:12pt;">Firma Infinito Digital</span>
+		
+	</td>
+	<td align="center"> 
+		<span style="font-size:12pt;">Firma Egreso</span>
+		
+	</td>
+	</tr>
+</table>
+  </div>
+</body>
+</html>
+<!-- END:main -->

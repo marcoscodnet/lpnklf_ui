@@ -1,0 +1,14 @@
+<rasty specificationClass="Lpnklf\UI\pages\historicoEstados\HistoricoEstados" templateLocation="pages/historicoEstados/HistoricoEstados.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+
+	<component id="historicoEstadosFilter" type="HistoricoEstadoFilter">
+		<param name="servicioTecnico" value="servicioTecnico" />
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="legend" />
+		<param name="legendAgain" value="str:historicoEstados.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

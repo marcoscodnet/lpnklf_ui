@@ -1,0 +1,5 @@
+<rasty specificationClass="Lpnklf\UI\layouts\LpnklfLoginMetroLayout" templateLocation="LpnklfLoginMetroLayout.htm">
+
+	<component id="footer" type="FooterLpnkf">
+	</component>
+</rasty>

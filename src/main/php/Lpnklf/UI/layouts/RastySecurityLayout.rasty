@@ -1,0 +1,12 @@
+<rasty specificationClass="Lpnklf\UI\layouts\LpnklfMetroLayout" templateLocation="LpnklfMetroLayout.htm">
+
+	<param name="menuGroups" value="menuGroups" />
+
+	<component id="header" type="HeaderNavMetro">
+		<param name="pageMenuGroups" value="menuGroups" />
+	</component>
+
+	<component id="footer" type="FooterLpnklf">
+	</component>
+
+</rasty>

@@ -1,0 +1,183 @@
+<rasty specificationClass="Lpnklf\UI\components\form\servicioTecnico\ServicioTecnicoForm" templateLocation="ServicioTecnicoForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="servicioTecnico.oid" />
+	</component>
+
+
+	<component id="fecha" type="InputDate">
+		<param name="inputId" value="str:fecha" />
+		<param name="name" value="str:fecha" />
+		<param name="value" value="fecha" />
+		<param name="placeholder" value="msg:servicioTecnico.fecha" />
+		<param name="format" value="str:d/m/Y" />
+		<param name="requiredMessage" value="msg:servicioTecnico.fecha.required" />
+	</component>
+	
+	<component id="hora" type="InputTime">
+		<param name="inputId" value="str:hora" />
+		<param name="name" value="str:hora" />
+		<param name="value" value="hora" />
+		<param name="placeholder" value="msg:servicioTecnico.hora" />
+		<param name="requiredMessage" value="msg:servicioTecnico.hora.required" />
+	</component>
+	
+	<component id="cliente" type="InputFindEntity">
+		<param name="inputId" value="str:cliente" />
+		<param name="name" value="str:cliente" />
+		<param name="value" value="servicioTecnico.cliente" />
+		<param name="placeholder" value="msg:servicioTecnico.cliente" />
+		<param name="finder" value="clienteFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:ClienteFilter" />
+		<param name="hasAddEntity" value="boolean:true" />
+		<param name="popupFormType" value="str:ClienteForm" />
+		<param name="popupFormAction" value="linkActionAgregarCliente" />
+		<param name="popupFormCallback" value="str:ServicioTecnicoAgregar" />
+	</component>
+
+	<component id="prioridad" type="InputCombo">
+		<param name="inputId" value="str:prioridad" />
+		<param name="name" value="str:prioridad" />
+		<param name="value" value="servicioTecnico.prioridad" />
+		<param name="options" value="prioridades" />
+		<param name="placeholder" value="msg:servicioTecnico.prioridad" />
+	</component>
+
+	<component id="tipoProducto" type="InputCombo">
+		<param name="inputId" value="str:tipoProducto" />
+		<param name="name" value="str:tipoProducto" />
+		<param name="value" value="servicioTecnico.tipoProducto" />
+		<param name="options" value="tiposProducto" />
+		<param name="finder" value="tipoProductoFinderClazz" />
+		<param name="placeholder" value="msg:servicioTecnico.tipoProducto" />
+	</component>
+	
+	<component id="marcaProducto" type="InputCombo">
+		<param name="inputId" value="str:marcaProducto" />
+		<param name="name" value="str:marcaProducto" />
+		<param name="value" value="servicioTecnico.marcaProducto" />
+		<param name="options" value="marcasProducto" />
+		<param name="finder" value="marcaProductoFinderClazz" />
+		<param name="placeholder" value="msg:servicioTecnico.marcaProducto" />
+	</component>
+	
+
+	<component id="modelo" type="InputText">
+		<param name="inputId" value="str:modelo" />
+		<param name="name" value="str:modelo" />
+		<param name="value" value="servicioTecnico.modelo" />
+		<param name="placeholder" value="msg:servicioTecnico.modelo" />
+	</component>
+
+	<component id="fuente" type="InputText">
+		<param name="inputId" value="str:fuente" />
+		<param name="name" value="str:fuente" />
+		<param name="value" value="servicioTecnico.fuente" />
+		<param name="placeholder" value="msg:servicioTecnico.fuente" />
+	</component>
+
+	
+	
+	<component id="bateria" type="InputText">
+		<param name="inputId" value="str:bateria" />
+		<param name="name" value="str:bateria" />
+		<param name="value" value="servicioTecnico.bateria" />
+		<param name="placeholder" value="msg:servicioTecnico.bateria" />
+	</component>
+
+	<component id="clave" type="InputText">
+		<param name="inputId" value="str:clave" />
+		<param name="name" value="str:clave" />
+		<param name="value" value="servicioTecnico.clave" />
+		<param name="placeholder" value="msg:servicioTecnico.clave" />
+	</component>
+	
+	<component id="detalleFalla" type="InputTextArea">
+		<param name="inputId" value="str:detalleFalla" />
+		<param name="name" value="str:detalleFalla" />
+		<param name="value" value="servicioTecnico.detalleFalla" />
+		<param name="placeholder" value="msg:servicioTecnico.detalleFalla" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	<component id="reparaHasta" type="InputCurrency">
+		<param name="inputId" value="str:reparaHasta" />
+		<param name="name" value="str:reparaHasta" />
+		<param name="value" value="servicioTecnico.reparaHasta" />
+		
+		<param name="placeholder" value="msg:servicioTecnico.reparaHasta" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="value" value="servicioTecnico.monto" />
+		
+		<param name="placeholder" value="msg:servicioTecnico.monto" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="diagnostico" type="InputTextArea">
+		<param name="inputId" value="str:diagnostico" />
+		<param name="name" value="str:diagnostico" />
+		<param name="value" value="servicioTecnico.diagnostico" />
+		<param name="placeholder" value="msg:servicioTecnico.diagnostico" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	<component id="diasDemora" type="InputNumber">
+		<param name="inputId" value="str:diasDemora" />
+		<param name="name" value="str:diasDemora" />
+		<param name="value" value="servicioTecnico.diasDemora" />
+		
+		<param name="placeholder" value="msg:servicioTecnico.diasDemora" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="estadoServicio" type="InputCombo">
+		<param name="inputId" value="str:estadoServicio" />
+		<param name="name" value="str:estadoServicio" />
+		<param name="value" value="servicioTecnico.estadoServicio" />
+		<param name="options" value="estados" />
+		<param name="finder" value="estadoFinderClazz" />
+		<param name="placeholder" value="msg:servicioTecnico.estadoServicio" />
+	</component>
+	
+	<component id="solucion" type="InputTextArea">
+		<param name="inputId" value="str:solucion" />
+		<param name="name" value="str:solucion" />
+		<param name="value" value="servicioTecnico.solucion" />
+		<param name="placeholder" value="msg:servicioTecnico.solucion" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	<component id="observaciones" type="InputTextArea">
+		<param name="inputId" value="str:observaciones" />
+		<param name="name" value="str:observaciones" />
+		<param name="value" value="servicioTecnico.observaciones" />
+		<param name="placeholder" value="msg:servicioTecnico.observaciones" />	
+		<param name="rows" value="str:5" />	
+	</component>
+	
+	
+	
+	
+	
+	
+	
+</rasty>

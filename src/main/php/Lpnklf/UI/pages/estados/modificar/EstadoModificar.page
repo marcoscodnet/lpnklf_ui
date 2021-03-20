@@ -1,0 +1,16 @@
+<rasty specificationClass="Lpnklf\UI\pages\estados\modificar\EstadoModificar" templateLocation="pages/estados/modificar/EstadoModificar.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+	<param name="estadoOid" value="get:oid" />
+
+
+	<component id="estadoForm" type="EstadoForm">
+		<param name="legend" value="msg:estado.modificar.legend" />
+		<param name="action" value="linkActionModificarEstado" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="estado" value="estado" />
+	</component>
+	
+</rasty>

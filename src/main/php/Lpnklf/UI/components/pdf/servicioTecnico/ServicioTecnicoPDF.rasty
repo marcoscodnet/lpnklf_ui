@@ -1,0 +1,5 @@
+<rasty specificationClass="Lpnklf\UI\components\pdf\servicioTecnico\ServicioTecnicoPDF" templateLocation="ServicioTecnicoPDF.htm">
+
+	<param name="servicioTecnicoOid" value="get:servicioTecnicoOid" />
+
+</rasty>

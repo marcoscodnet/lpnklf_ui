@@ -1,0 +1,14 @@
+<rasty specificationClass="Lpnklf\UI\pages\serviciosTecnico\agregar\ServicioTecnicoAgregar" templateLocation="pages/serviciosTecnico/agregar/ServicioTecnicoAgregar.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+
+	<component id="servicioTecnicoForm" type="ServicioTecnicoForm">
+		<param name="legend" value="msg:servicioTecnico.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarServicioTecnico" />
+		<param name="method" value="str:post" />
+		<param name="servicioTecnico" value="servicioTecnico" />
+	</component>
+	
+</rasty>

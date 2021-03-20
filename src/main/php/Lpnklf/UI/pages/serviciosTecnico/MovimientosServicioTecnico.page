@@ -1,0 +1,13 @@
+<rasty specificationClass="Lpnklf\UI\pages\serviciosTecnico\MovimientosServicioTecnico" templateLocation="pages/serviciosTecnico/MovimientosServicioTecnico.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+
+	<component id="movimientosFilter" type="MovimientoServicioTecnicoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:servicioTecnico.movimientos.buscar" />
+		<param name="legendAgain" value="msg:servicioTecnico.movimientos.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,16 @@
+<rasty specificationClass="Lpnklf\UI\pages\serviciosTecnico\modificar\ServicioTecnicoModificar" templateLocation="pages/serviciosTecnico/modificar/ServicioTecnicoModificar.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+	<param name="servicioTecnicoOid" value="get:oid" />
+
+
+	<component id="servicioTecnicoForm" type="ServicioTecnicoForm">
+		<param name="legend" value="msg:servicioTecnico.modificar.legend" />
+		<param name="action" value="linkActionModificarServicioTecnico" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="servicioTecnico" value="servicioTecnico" />
+	</component>
+	
+</rasty>

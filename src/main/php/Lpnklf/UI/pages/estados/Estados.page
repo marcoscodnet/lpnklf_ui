@@ -1,0 +1,13 @@
+<rasty specificationClass="Lpnklf\UI\pages\estados\Estados" templateLocation="pages/estados/Estados.htm"> 
+
+	<param name="layoutType" value="str:LpnklfMetroLayout" />
+
+	<component id="estadosFilter" type="EstadoFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:estado.buscar" />
+		<param name="legendAgain" value="msg:estado.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>
