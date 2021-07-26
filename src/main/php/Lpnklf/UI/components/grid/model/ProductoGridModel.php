@@ -27,7 +27,7 @@ use Rasty\Menu\menu\model\MenuActionAjaxOption;
 
 /**
  * Model para la grilla de productos.
- * 
+ *
  * @author Marcos
  * @since 06/03/2018
  */
@@ -37,53 +37,53 @@ class ProductoGridModel extends EntityGridModel{
 
         parent::__construct();
         $this->initModel();
-        
+
     }
-    
+
     public function getService(){
-    	
+
     	return UIServiceFactory::getUIProductoService();
     }
-    
+
     public function getFilter(){
-    	
+
     	$filter = new UIProductoCriteria();
-		return $filter;    	
+		return $filter;
     }
-        
+
 	protected function initModel() {
 
 		$this->setHasCheckboxes( false );
-		
+
 		$column = GridModelBuilder::buildColumn( "oid", "producto.oid", 20, EntityGrid::TEXT_ALIGN_RIGHT );
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "nombre", "producto.nombre", 30, EntityGrid::TEXT_ALIGN_LEFT ) ;
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "tipoProducto", "producto.tipoProducto", 30, EntityGrid::TEXT_ALIGN_LEFT ) ;
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "marcaProducto", "producto.marcaProducto", 30, EntityGrid::TEXT_ALIGN_LEFT ) ;
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "stock", "producto.stock", 10, EntityGrid::TEXT_ALIGN_RIGHT ) ;
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "stockMinimo", "producto.stockMinimo", 10, EntityGrid::TEXT_ALIGN_RIGHT ) ;
 		$this->addColumn( $column );
-		
-		$column = GridModelBuilder::buildColumn( "costo", "producto.costo", 10, EntityGrid::TEXT_ALIGN_RIGHT ,  new GridImporteFormat('U$S')) ;
+
+		$column = GridModelBuilder::buildColumn( "costo", "producto.costo", 10, EntityGrid::TEXT_ALIGN_RIGHT ,  new GridImporteFormat()) ;
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "precioEfectivo", "producto.precioEfectivo", 10, EntityGrid::TEXT_ALIGN_RIGHT  ,  new GridImporteFormat()) ;
 		$this->addColumn( $column );
-		
+
 		$column = GridModelBuilder::buildColumn( "precioLista", "producto.precioLista", 10, EntityGrid::TEXT_ALIGN_RIGHT ,  new GridImporteFormat()) ;
 		$this->addColumn( $column );
-		
-	
-		
+
+
+
 	}
 
 	public function getDefaultFilterField() {
@@ -92,19 +92,19 @@ class ProductoGridModel extends EntityGridModel{
 
 	public function getDefaultOrderField(){
 		return "nombre";
-	}    
+	}
 
-    
+
     /**
 	 * opciones de menú dado el item
 	 * @param unknown_type $item
 	 */
 	public function getMenuGroups( $item ){
-	
+
 		$group = new MenuGroup();
 		$group->setLabel("grupo");
 		$options = array();
-		
+
 		$menuOption = new MenuOption();
 		$menuOption->setLabel( $this->localize( "menu.productos.modificar") );
 		$menuOption->setPageName( "ProductoModificar" );
@@ -112,11 +112,11 @@ class ProductoGridModel extends EntityGridModel{
 		$menuOption->setImageSource( $this->getWebPath() . "css/images/editar_32.png" );
 		$options[] = $menuOption ;
 
-		
-		
-						
-		
-		
+
+
+
+
+
 		$menuOption = new MenuActionAjaxOption();
 		$menuOption->setLabel( $this->localize( "menu.producto.eliminar") );
 		$menuOption->setActionName( "EliminarProducto" );
@@ -126,12 +126,12 @@ class ProductoGridModel extends EntityGridModel{
 		$menuOption->addParam("productoOid",$item->getOid());
 		$menuOption->setImageSource( $this->getWebPath() . "css/images/eliminar_32.png" );
 		$options[] = $menuOption ;
-		
+
 		$group->setMenuOptions( $options );
-		
+
 		return array( $group );
-		
-	} 
-    
+
+	}
+
 }
 ?>

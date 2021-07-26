@@ -6,7 +6,7 @@
 $(function() {
 
 	$("#codigo").focus();
-	
+
 });
 </script>
 
@@ -60,7 +60,7 @@ $(function() {
 			</div>
 			<div style="clear: both"></div>
 		</div>
-		
+
 		<div class="row">
 			<div class="col-4">
 				<div class="item">
@@ -74,44 +74,44 @@ $(function() {
 				    <rasty id="porcentajeGanancia" />
 				</div>
 			</div>
-			
+
 			<div style="clear: both"></div>
 		</div>
-		
 
-		
 
-		
 
-		
-		
-		
 
-		
+
+
+
+
+
+
+
 		<div class="item">
 		    <label for="descripcion">{lbl_descripcion}:</label>
 		    <rasty id="descripcion" />
 		</div>
 
-		
+
 	</fieldset>
-	
+
 
 </form>
 <!-- BEGIN: msg_error -->
 <fieldset class="ui-state-error">
-	{msg}	
+	{msg}
 </fieldset>
 <!-- END: msg_error -->
 
 <form  class="turnos_form" id="buttons{inputId}">
 	<fieldset class="tblFooters">
-	
+
 		<button type="button"  id="input_submit" onclick="javascript: submitFormulario('producto_form'); "><i class="icon-checkmark on-left"></i>{lbl_submit}</button>
 
 		<button type="button"  id="input_button_2" onclick="javascript: window.location.href = '{cancel}'; "><i class="icon-cancel-2 on-left"></i>{lbl_cancel}</button>
-	
+
 	</fieldset>
-</form>	
+</form>
 </div>
 <!-- END:main -->
