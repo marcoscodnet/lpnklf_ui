@@ -183,6 +183,7 @@
 	<action name="AgregarProducto" class="Lpnklf\UI\actions\productos\AgregarProducto" url="productos/agregar"/>
 	<action name="ModificarProducto" class="Lpnklf\UI\actions\productos\ModificarProducto" url="productos/modificar"/>
 	<action name="ModificarStockProducto" class="Lpnklf\UI\actions\productos\ModificarStockProducto" url="productos/stock/modificar"/>
+	<action name="EliminarProducto" class="Lpnklf\UI\actions\productos\EliminarProducto" url="productos/eliminar"/>
 
 	<action name="AgregarCliente" class="Lpnklf\UI\actions\clientes\AgregarCliente" url="clientes/agregar"/>
 	<action name="ModificarCliente" class="Lpnklf\UI\actions\clientes\ModificarCliente" url="clientes/modificar"/>
